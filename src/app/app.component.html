@@ -21,12 +21,14 @@
       </div>
 
     </div>
-    <div class="col col-lg-6 text-center">
+    <div class="col col-lg-6 text-center" *ngIf = "winMessage">
       <h1 class="text-uppercase">Game over {{ winMessage }}</h1>
       <button
         (click)="relodeGame()"
-        class="btn btn-danger text-uppercase pl-5 pr-5"
-      ></button>
+        class="btn btn-danger text-uppercase pl-5 "
+        >
+        reload game
+      </button>
     </div>
   </div>
 </div>
